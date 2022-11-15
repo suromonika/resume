@@ -25,7 +25,7 @@ function App() {
                 <div className='Green-box'></div>
               </div>
             </div>
-            <div class='Link-container'>
+            <div className='Link-container'>
               <div className='Linkedin-logo'></div>
               <a
                 className='Clean-link'
@@ -69,7 +69,7 @@ function App() {
                 <div className='Green-box'></div>
               </div>
             </div>
-            <ul class='Education-list'>
+            <ul className='Education-list'>
               <li>ALEKSANDRO STULGINSKIO UNIVERSITETAS</li>
               <li>2014 - 2018</li>
               <li>Land Use Planning Bachelor's degree</li>
@@ -77,7 +77,7 @@ function App() {
 
             <hr className='Short-seperator' />
 
-            <ul class='Education-list'>
+            <ul className='Education-list'>
               <li>CODEACADEMY</li>
               <li>2022 - 2023</li>
               <li>Frontend Developer Courses</li>
