@@ -1,38 +1,205 @@
 .App {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.Central-container {
+  margin: auto;
+  max-width: 1080px;
+  padding: 0 20px;
+}
+
+.Top-green-box {
+  position: relative;
+  width: 100%;
+  height: 61px;
+  background-color: #7abcac;
+}
+
+select[name='language'] {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.Name-position-block {
+  position: relative;
+  top: -30px;
+  margin: auto;
+  margin-bottom: 80px;
+  border: 4px solid black;
+  max-width: 586px;
+  padding: 44px 20px;
+}
+
+header {
+  position: relative;
+}
+
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header h2,
+footer h2 {
+  font-size: 24px;
+  max-width: 300px;
+  padding: 0 10px;
+  background-color: black;
+  color: white;
+  margin: 18px auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+.Section-header-container h2 {
+  text-transform: uppercase;
+}
+
+.Flex-container {
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.Flex-item {
+  flex: 1;
+  min-width: 220px;
+  margin: 20px 0px;
+}
+
+.Flex-item--large {
+  flex-grow: 2;
+}
+
+.Green-box-seperator {
+  position: relative;
+}
+
+hr {
+  height: 4px;
+  background-color: #dcdcdc;
+  border: none;
+}
+
+.Short-seperator {
+  width: 200px;
+  float: left;
+}
+
+.Green-box {
+  position: absolute;
+  top: -4px;
+  width: 72px;
+  padding: 5px;
+  background-color: #7abcac;
+}
+
+.Github-logo::after {
+  content: url('../src/images/github.svg');
+  padding-right: 12px;
+}
+
+.Linkedin-logo::after {
+  content: url('../src/images/linkedin.svg');
+  padding-right: 12px;
+}
+.Link-container {
+  display: flex;
+  align-items: center;
+}
+
+.Clean-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.Education-list,
+.Badge-list,
+.No-decoration-central-list {
+  display: inline-block;
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
+}
+
+.Badge-list {
+  text-transform: uppercase;
+}
+
+.Badge-list li {
+  margin-bottom: 30px;
+}
+
+.Badge-list span {
+  padding: 1px 7px;
+  border-radius: 12px;
+}
+
+.Very-good {
+  background-color: #7abcac;
+}
+
+.Good {
+  background-color: #d8da79;
+}
+
+.Basic {
+  background-color: #c29486;
+}
+
+.No-decoration-central-list {
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.No-decoration-central-list li {
+  margin-bottom: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.List-padding-left {
+  padding-left: 15px;
+}
+
+.Right-border {
+  border-right: 2px solid #dcdcdc;
+  padding-right: 20px;
+}
+
+footer .No-decoration-central-list {
+  margin-top: 0px;
+}
+
+.Green-hover:hover {
+  color: #7abcac;
+}
+
+@media screen and (max-width: 800px) {
+  p,
+  li {
+    font-size: calc(14px + (16 - 14) * ((100vw - 360px) / (1800 - 360)));
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  .Right-border {
+    border-right: none;
+    border-bottom: 2px solid #dcdcdc;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 360px) {
+  h1 {
+    font-size: calc(20px + (40 - 20) * ((100vw - 360px) / (1800 - 360)));
   }
-  to {
-    transform: rotate(360deg);
+
+  h2,
+  header h2,
+  footer h2 {
+    font-size: calc(16px + (24 - 16) * ((100vw - 360px) / (1800 - 360)));
   }
 }
